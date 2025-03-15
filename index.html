@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Ultimate Personality Test
+        </title>  
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>
+            Welcome to the Ultimate Personality Test !
+        </h1>
+        <p>
+            This test will help you to understand your personality better.
+        </p>
+        <form method="post" action="/submit">
+            <fieldset>
+                <h2>
+                    Basic Information
+                </h2>
+                <label for="name">What is your name?
+                    <input type="text" name="name" id="name" required>
+                </label>
+                <label for="email">Enter you email to receive the results
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label for="birthday">When is your birthday?
+                    <input type="date" name="birthday" id="birthday">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <h2>Personality Test</h2>
+                <label for="color">What is your favorite color?
+                    <input type="color" name="fav_colour" required>
+                </label>
+                <legend>How do you spend your weekend?
+                    <label for ="reading"><input type="radio" name="weekend" value="reading" class="inline" checked>Reading</label>
+                    <label for ="socializing"><input type="radio" name="weekend" value="socializing" class="inline">Socializing</label>
+                    <label for ="adventure"><input type="radio" name="weekend" value="adventure" class="inline">Trying new activities</label>
+                    <label for ="relaxing"><input type="radio" name="weekend" value="relaxing" class="inline">Staying home & relaxing</label>
+                </legend>
+                <legend>What qualities describe you best? (Select all that apply)
+                    <label for="creative"><input type="checkbox" name="qualities" value="creative" class="inline" checked>Creative</label>
+                    <label for="analytical"><input type="checkbox" name="qualities" value="analytical" class="inline">Analytical</label>
+                    <label for="adventurous"><input type="checkbox" name="qualities" value="adventurous" class="inline">Adventurous</label>
+                    <label for="social"><input type="checkbox" name="qualities" value="social" class="inline">Social</label>
+                </legend>
+                <label for="organized">On a scale of 1-10, how organised are you?
+                    <input type="number" min="1" max="10" name="organized" required>
+                </label>
+                <label for="time_of_the_day">What is your favorite part of the day?
+                    <select name="time_of_the_day">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="night">Night</option>
+                    </select>
+                </label>
+                <label for="extroversion">How introverted or extroverted are you? (0 = Very Introverted, 10 = Very Extroverted)
+                    <input type="range" name="extroversion" min="0" max="10" step="1" value="5">
+                </label>
+                <label for="bio">Describe yourself in a few sentences
+                    <textarea name="bio" rows="4" cols="50" placeholder="I like to play golf..."></textarea>
+                </label>
+                <label for="password">Enter a secret code to access your Report
+                    <input type="password" name="password" required>
+                </label>
+                <label for="submit">
+                    <input type="submit" value="See my Personality Results">
+                </label>
+                <label for="reset">
+                    <input type="reset" value="Reset Form">
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
